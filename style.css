@@ -1,0 +1,475 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, Helvetica, sans-serif;
+  background: white;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+input {
+  width: 100%;
+}
+
+.top {
+  margin: 25px 15px 15px 15px;
+}
+
+#logo img {
+  display: inline-block;
+}
+
+.navbar a {
+  display: inline-block;
+}
+
+.user a {
+  margin-left: 15px;
+}
+
+/* Navbar Mobile */
+
+.sidenav {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 100%;
+  background-color: white;
+  padding-top: 60px;
+  transition: left 0.6s ease;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Sous-menu Gallerie */
+
+.categories {
+  display: grid;
+  grid-template: repeat(5, 150px) / 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.one {
+  background-image: url(assets/one.webp);
+  background-size: cover;
+  margin-bottom: 25px;
+  height: 100px;
+  position: relative;
+}
+
+.one h3 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.two {
+  position: relative;
+  background-image: url(assets/two.webp);
+  background-size: cover;
+  margin-bottom: 25px;
+  height: 100px;
+}
+
+.two h3 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.three {
+  position: relative;
+  background-image: url(assets/three.webp);
+  background-size: cover;
+  margin-bottom: 25px;
+  height: 100px;
+}
+
+.three h3 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.four {
+  position: relative;
+  background-image: url(assets/four.webp);
+  background-size: cover;
+  margin-bottom: 25px;
+  height: 100px;
+}
+
+.four h3 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.five {
+  position: relative;
+  background-image: url(assets/five.webp);
+  background-size: cover;
+  margin-bottom: 25px;
+  height: 100px;
+}
+
+.five h3 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.six {
+  position: relative;
+  background-image: url(assets/six.webp);
+  background-size: cover;
+  margin-bottom: 25px;
+  height: 100px;
+}
+
+.six h3 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.seven {
+  position: relative;
+  background-image: url(assets/seven.webp);
+  background-size: cover;
+  margin-bottom: 25px;
+  height: 100px;
+}
+
+.seven h3 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.eight {
+  position: relative;
+  background-image: url(assets/eight.webp);
+  background-size: cover;
+  margin-bottom: 25px;
+  height: 100px;
+}
+
+.eight h3 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.nine {
+  position: relative;
+  background-image: url(assets/nine.webp);
+  background-size: cover;
+  margin-bottom: 25px;
+  height: 100px;
+}
+
+.nine h3 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 35px;
+}
+
+.icon {
+  display: flex;
+  border-top: 1px solid #d0d1d3;
+  border-bottom: 1px solid #d0d1d3;
+}
+
+.icon a {
+  padding: 10px;
+}
+
+.one span {
+  display: block;
+  background-color: black;
+  width: 20px;
+  height: 1px;
+  margin: 8px 0;
+  border-radius: 12px;
+}
+
+.two span {
+  display: block;
+  background-color: black;
+  width: 15px;
+  height: 1px;
+  margin: 8px 0;
+  border-radius: 12px;
+}
+
+.three span {
+  display: block;
+  background-color: black;
+  width: 20px;
+  height: 1px;
+  margin: 8px 0;
+  border-radius: 12px;
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.search {
+  border: none;
+  background: #f4f4f4;
+  width: 100vw;
+  height: 55px;
+  border: 1px solid #d0d1d3;
+  border: 1px solid #d0d1d3;
+  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+  background-size: 35px;
+}
+
+input::placeholder {
+  font-size: 1.3em;
+  padding-left: 12px;
+}
+
+
+/* Navbar Media Queries */
+
+@media screen and (min-width: 1100px) {
+  .nav_mobile {
+    display: none;
+  }
+}
+
+.menu_container {
+  margin: 0 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+
+.up {
+  padding-top: 6px;
+}
+
+.menu_user img {
+  width: 20px;
+  height: 20px;
+}
+
+.elements_one {
+  flex: 1;
+}
+
+.elements_one a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 6px 9px;
+}
+
+.elements_one a:hover {
+  background-color: #d0d1d3;
+  color: white;
+  line-height: 12px;
+}
+
+.logo_zalando {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0 35px;
+  flex: 1;
+}
+
+.logo_zalando img {
+  display: flex;
+}
+
+#plus {
+  position: absolute;
+  top: 20px;
+  left: 240px;
+}
+
+.menu_user {
+  display: flex;
+  justify-content: end;
+  flex: 1;
+}
+
+.menu_user a {
+  padding: 10px;
+}
+
+
+/* Sous-menu */
+
+.subnav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 90px 6px 90px;
+}
+
+.subnav li {
+  display: inline-block;
+}
+
+.subnav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  padding: 10px 8px;
+}
+
+@media screen and (max-width: 1100px) {
+  .nav_desktop {
+    display: none;
+  }
+}
+
+
+/* Section Bannière */
+
+main {
+  width: 100%;
+}
+
+.banner {
+  height: 400px;
+  padding: 0 90px;
+  background-color: #efeff0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.choice {
+  flex: 1;
+  margin-top: 60px;
+  padding-right: 8px;
+}
+
+.illustration {
+  display: flex;
+  align-items: end;
+  flex: 1;
+}
+
+.illustration img {
+  height: 360px;
+  width: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 20px;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.video {
+  height: 400px;
+  padding: 0 90px;
+  background-color: #efeff0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video video {
+  height: 360px;
+  width: auto;
+}
+
+.liste {
+  height: 400px;
+}
+
+@media screen and (max-width: 1100px) {
+  .video {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 20px;
+  }
+
+  .video video {
+    width: 100%;
+    height: auto;
+  }
+}
